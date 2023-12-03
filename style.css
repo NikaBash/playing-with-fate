@@ -1,0 +1,89 @@
+body {
+    background-color: #fdd2bf;
+    margin: 0;
+}
+.header, .image-container, .btn {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+#one, #two {
+    padding: 20px;
+    background-color: rgb(255, 81, 0);
+    color: white;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    border-radius: 20px;
+}
+#myImage {
+    border-radius: 30px;
+}
+p {
+    font-size: 7px;
+}
+.par {
+    display: flex;
+    justify-content: center;
+}
+@media all and (max-width: 800px) {
+    #myImage {
+        width: 400px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #myImage {
+        width: 400px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, rgb(147, 255, 126) 0%, rgb(177, 255, 125) 25%, rgb(255, 168, 127) 51%, #ff8d8d 100%);
+    -webkit-animation: AnimateBG 15s ease infinite;
+            animation: AnimateBG 15s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
